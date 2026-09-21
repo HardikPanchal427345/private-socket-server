@@ -1,26 +1,12 @@
 {
-  "name": "ts-socket-server",
+  "name": "custom-socket-server",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "description": "Custom WebSocket server with direct messaging and pub/sub",
+  "main": "server.js",
   "scripts": {
-    "dev": "ts-node src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "clean": "rm -rf dist"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.0.3",
-    "@types/socket.io": "^3.0.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
+    "ws": "^8.18.3"
   }
 }
